@@ -38,7 +38,7 @@ Mascote auxiliar para trazer explicações e informações da importância de ca
 
 ## Aleatoriedade das dicas
 
-Cada página irá ler um json contendo as informações que deverão ser mostradas na paǵina, para cada dica, exisitrão algumas opções de json que serão selecionadas de forma aleatória para garantir uma maior 'rejogabilidade'
+Cada página irá ler um json contendo as informações que deverão ser mostradas na paǵina, para cada dica, exisitrão algumas opções de json que serão selecionadas de forma aleatória para garantir uma maior 'rejogabilidade'. Fazer as colunas serem aleatórias e a senha ser uma concatenação das dicas.
 
 ## Ajuda nas dicas
 
