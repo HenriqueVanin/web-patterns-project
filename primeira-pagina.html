@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primeira Página</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primeira Página</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
     <header>
-      <p>Primeiro desafio</p>
-      <p>Projeto Padrões Web</p>
+      <h4>Primeiro desafio</h4>
+      <h4>UTFPR - Padrões Web</h4>
     </header>
-    <main>
-      <div class="row">
-        <div class="column">
-          <h2>Coluna 1</h2>
-          <p>Coluna 1. Aqui irá conter uma dica ------------------</p>
-        </div>
-        <div class="column">
-          <h2>Coluna 2</h2>
-          <p>Coluna 2. Aqui irá conter uma dica ------------------</p>
-        </div>
-        <div class="column">
-          <h2>Coluna 3</h2>
-          <p>Coluna 3. Aqui irá conter uma dica ------------------</p>
-        </div>
-      </div>
-      <form>
-        <div>
-          <input type="text" placeholder="Digite a senha aqui..." />
-        </div>
-        <div>
-          <input type="submit" value="Avançar" />
-        </div>
+    <div class="title">
+      <h1>Clareza na informação</h1>
+      <p>Resolva os três desafios abaixo e acerte todas as senhas para liberar o botão "Avançar".</p>
+    </div>
+    <div class="column low-contrast">
+      <h2 id="col-title-1"></h2>
+      <p>Um bom contraste facilita a leitura e torna o site mais acessível para todos. Vamos
+        juntos criar páginas mais amigáveis! Mas vamos ao nosso enigma:</p>
+      <p id="col-tip-1"></p>
+      <form class="puzzle-form" data-answer="">
+        <input type="text" placeholder="Digite a senha 1..." autocomplete="off" />
+        <button type="button" class="help-btn">Quero ajuda</button>
+        <span class="result"></span>
       </form>
-    </main>
-  </body>
+    </div>
+    <div class="column too-small-text">
+      <h2 id="col-title-2"></h2>
+      <p>Texto pequeno demais dificulta a leitura e pode causar desconforto visual. Vamos
+        juntos criar páginas mais confortáveis! Mas vamos ao nosso enigma:</p>
+      <p id="col-tip-2"></p>
+      <form class="puzzle-form" data-answer="">
+        <input type="text" placeholder="Digite a senha 2..." autocomplete="off" />
+        <button type="button" class="help-btn">Quero ajuda</button>
+        <span class="result"></span>
+      </form>
+    </div>
+    <div class="column no-spacing">
+      <h2 id="col-title-3"></h2>
+      <p>Espaçamento adequado entre os elementos melhora a legibilidade e a estética do site. Vamos
+        juntos criar páginas mais organizadas! Mas vamos ao nosso enigma:</p>
+      <p id="col-tip-3"></p>
+      <form class="puzzle-form" data-answer="">
+        <input type="text" placeholder="Digite a senha 3..." autocomplete="off" />
+        <button type="button" class="help-btn">Quero ajuda</button>
+        <span class="result"></span>
+      </form>
+    </div>
+    <form>
+      <button id="next-btn" type="button" class="next-btn" disabled>Avançar</button>
+    </form>
+  </main>
+  <script src="puzzles.js"></script>
+</body>
+
 </html>
