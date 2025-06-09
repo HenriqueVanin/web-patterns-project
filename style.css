@@ -297,30 +297,30 @@ input[type="text"] {
 }
 
 /* Problema de tamanho de texto: texto muito pequeno */
-.category-1-puzzle-1 p {
+.category-2-puzzle-1 p {
     font-size: 0.5rem;
 }
 
-.category-1-puzzle-2 p {
+.category-2-puzzle-2 p {
     font-size: 0.8rem;
 }
 
-.category-1-puzzle-3 p {
+.category-2-puzzle-3 p {
     font-size: 1.1rem;
 }
 
 /* Problema de espaçamento: texto muito junto */
-.category-1-puzzle-1 p {
+.category-3-puzzle-1 p {
     letter-spacing: -2px;
     line-height: 0.7;
 }
 
-.category-1-puzzle-2 p {
+.category-3-puzzle-2 p {
     letter-spacing: -1px;
     line-height: 1;
 }
 
-.category-1-puzzle-3 p {
+.category-3-puzzle-3 p {
     letter-spacing: 0;
     line-height: 1.4;
 }
