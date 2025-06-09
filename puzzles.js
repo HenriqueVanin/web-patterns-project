@@ -31,20 +31,19 @@ fetch("./data/puzzles.json")
         function checkAnswer(form) {
             const input = form.querySelector('input[type="text"]');
             const result = form.querySelector(".result");
-            const helpBtn = form.querySelector(".help-btn");
+            result.classList.remove("correct", "incorrect");
             if (input.value.trim() === "") {
                 result.innerHTML = "";
-                helpBtn.style.display = "inline-block";
                 return;
             }
             if (
                 input.value.trim().toLowerCase() === form.dataset.answer.toLowerCase()
             ) {
                 result.innerHTML = "Correto";
-                helpBtn.style.display = "none";
+                result.classList.add("correct");
             } else {
                 result.innerHTML = "Incorreto";
-                helpBtn.style.display = "inline-block";
+                result.classList.add("incorrect");
             }
         }
 
