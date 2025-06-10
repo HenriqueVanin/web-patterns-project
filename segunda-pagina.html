@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Segundo Desafio - Audiovisual</title>
+  <link rel="stylesheet" href="style_2.css"/>
+</head>
+<body>
+  <main>
+    <header>
+      <h4>Segundo desafio</h4>
+      <h4>UTFPR - Padrões Web</h4>
+    </header>
+    <div class="title">
+      <h1>Acessibilidade Audiovisual</h1>
+      <p>Resolva os dois desafios abaixo relacionados a imagem e áudio. Encontre as respostas corretas para liberar o botão "Avançar".</p>
+    </div>
+
+    <div class="columns">
+      <!-- Coluna 1: Imagem -->
+      <div id="column-1" class="column category-1-puzzle-1">
+        <h2 id="col-title-1"></h2>
+        <img id="puzzle-img-1" src="" alt=""/>
+        <p id="col-alt-1" aria-live="polite"></p>
+        <form class="puzzle-form" data-answer="" data-bad-alt="" data-good-alt="">
+          <span class="result"></span>
+          <input type="text" placeholder="Senha do enigma da imagem" autocomplete="off"/>
+          <button type="button" id="help-puzzle-1" class="help-btn">Quero ajuda</button>
+        </form>
+      </div>
+
+      <!-- Coluna 2: Áudio/Letras -->
+      <div id="column-2" class="column category-2-puzzle-1">
+        <h2 id="col-title-2"></h2>
+      
+        <!-- Novo botão de play -->
+        <button type="button" id="play-puzzle-2" class="play-btn">Ouvir letra</button>
+      
+        <div id="col-lyrics-2" aria-live="polite"></div>
+        <form class="puzzle-form" data-answer="" data-bad-lang="" data-good-lang="">
+          <span class="result"></span>
+          <input type="text" placeholder="Senha do enigma do áudio" autocomplete="off"/>
+          <button type="button" id="help-puzzle-2" class="help-btn">Quero ajuda</button>
+        </form>
+      </div>
+
+    <button id="next-btn" class="next-btn" type="button" disabled>Avançar</button>
+  </main>
+
+  <script src="puzzles_2.js"></script>
+</body>
+</html>

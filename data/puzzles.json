@@ -109,7 +109,7 @@
                     "This place is too crowded",
                     "Too many cool kids"
                 ],
-                "bad-lang": "jp",
+                "bad-lang": "pt",
                 "good-lang": "en",
                 "answer": 22
             },
@@ -120,7 +120,7 @@
                     "Not shy of a spark",
                     "The knife twists at the thought that I should fall short of the mark"
                 ],
-                "bad-lang": "jp",
+                "bad-lang": "pt",
                 "good-lang": "en",
                 "answer": 505
             },
@@ -137,7 +137,7 @@
                     "Trapped in myself",
                     "Body, my holding cell"
                 ],
-                "bad-lang": "jp",
+                "bad-lang": "pt",
                 "good-lang": "en",
                 "answer": 1
             },
@@ -150,7 +150,7 @@
                     "And if it looks like this",
                     "Then you're doing it right"
                 ],
-                "bad-lang": "jp",
+                "bad-lang": "pt",
                 "good-lang": "en",
                 "answer": 5
             },
@@ -163,7 +163,7 @@
                     "Do you think time",
                     "Would pass me by?"
                 ],
-                "bad-lang": "jp",
+                "bad-lang": "pt",
                 "good-lang": "en",
                 "answer": 1000
             }
