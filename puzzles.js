@@ -72,7 +72,7 @@ fetch("./data/puzzles.json")
                     columnDiv.classList.remove(`page-1-category-${category_id + 1}-puzzle-${i}`);
                 };
                 columnDiv.classList.add(
-                    `category-${category_id + 1}-puzzle-${helpCounts[category_id]}`
+                    `page-1-category-${category_id + 1}-puzzle-${helpCounts[category_id]}`
                 );
             }
         }
