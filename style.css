@@ -44,13 +44,11 @@ main {
     column-gap: 40px;
     row-gap: 20px;
     padding: 50px;
-    padding-left: 10vw;
-    padding-right: 10vw;
     justify-items: center;
 }
 
 /* Breakpoint para tablets */
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
     main {
         grid-template-areas:
             "header"
@@ -113,7 +111,9 @@ p {
 /* Formulários e botões */
 form {
     grid-area: form;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -146,6 +146,7 @@ input[type="text"] {
     color: #ffffff;
     font-size: 1rem;
     background-color: #525252;
+    width: 93%;
 }
 
 
@@ -178,8 +179,8 @@ input[type="text"] {
     background: linear-gradient(0deg, rgba(24, 24, 24, 0.85) 0%, rgba(29, 29, 29, 0.7) 100%);
     padding: 15px;
     color: #ffffff;
-    border: 1px solid #757575;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    border: 1px solid #3b3b3b;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -266,53 +267,96 @@ input[type="text"] {
     color: #c0392b;
 }
 
-/* Problema de cor: contraste insuficiente */
-.category-1-puzzle-1 p {
+.page-1-category-1-puzzle-1 p {
     color: #60cc69;
     background-color: #c5b500;
     padding: 20px;
     border-radius: 5px;
 }
 
-.category-1-puzzle-2 p {
+.page-1-category-1-puzzle-2 p {
     color: #3a7a3d;
     background-color: #e6e600;
     padding: 20px;
     border-radius: 5px;
 }
 
-.category-1-puzzle-3 p {
+.page-1-category-1-puzzle-3 p {
     color: #ececec;
     background-color: #2c2c2c;
     padding: 20px;
     border-radius: 5px;
 }
 
-/* Problema de tamanho de texto: texto muito pequeno */
-.category-2-puzzle-1 p {
+.page-1-category-2-puzzle-1 p {
     font-size: 0.5rem;
 }
 
-.category-2-puzzle-2 p {
+.page-1-category-2-puzzle-2 p {
     font-size: 0.8rem;
 }
 
-.category-2-puzzle-3 p {
+.page-1-category-2-puzzle-3 p {
     font-size: 1.1rem;
 }
 
 /* Problema de espaçamento: texto muito junto */
-.category-3-puzzle-1 p {
+.page-1-category-3-puzzle-1 p {
     letter-spacing: -2px;
     line-height: 0.7;
 }
 
-.category-3-puzzle-2 p {
+.page-1-category-3-puzzle-2 p {
     letter-spacing: -1px;
     line-height: 1;
 }
 
-.category-3-puzzle-3 p {
+.page-1-category-3-puzzle-3 p {
     letter-spacing: 0;
     line-height: 1.4;
+}
+
+
+
+.page-2-category-1-puzzle-1 img {
+    max-width: 300px;
+    filter: blur(20px);
+}
+
+.page-2-category-1-puzzle-2 img {
+    max-width: 300px;
+    filter: blur(5px);
+}
+
+.page-2-category-1-puzzle-3 img {
+    max-width: 300px;
+    filter: none;
+}
+
+.play-btn {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background: #129e7b;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background 0.2s;
+    max-width: 320px;
+}
+
+.play-btn:hover {
+    background: #0f8a64;
+}
+
+#col-lyrics-2 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 3em;
+}
+
+/* alt/texto de lyrics */
+#col-alt-1,
+#col-lyrics-2 {
+    margin-bottom: 1rem;
 }

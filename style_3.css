@@ -15,16 +15,37 @@ body {
 /***** BANNER *****/
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes border-blink {
-    0% { border: 5px dashed #ff0000; }
-    25% { border: 5px dashed #ffff00; }
-    50% { border: 5px dashed #00ff00; }
-    75% { border: 5px dashed #00ffff; }
-    100% { border: 5px dashed  #ff00ff; }
+    0% {
+        border: 5px dashed #ff0000;
+    }
+
+    25% {
+        border: 5px dashed #ffff00;
+    }
+
+    50% {
+        border: 5px dashed #00ff00;
+    }
+
+    75% {
+        border: 5px dashed #00ffff;
+    }
+
+    100% {
+        border: 5px dashed #ff00ff;
+    }
 }
 
 marquee {

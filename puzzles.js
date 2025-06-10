@@ -67,9 +67,10 @@ fetch("./data/puzzles.json")
             const columnDiv = document.getElementById(`column-${category_id + 1}`);
             if (columnDiv) {
                 // Remove classes category-x-puzzle-* antes de adicionar a nova
-                for (let i = 1; i <= 3; i++) {
-                    columnDiv.classList.remove(`category-${category_id + 1}-puzzle-${i}`);
-                }
+                let i = 0;
+                for (i = 1; i <= 3; i++) {
+                    columnDiv.classList.remove(`page-1-category-${category_id + 1}-puzzle-${i}`);
+                };
                 columnDiv.classList.add(
                     `category-${category_id + 1}-puzzle-${helpCounts[category_id]}`
                 );
@@ -97,9 +98,10 @@ fetch("./data/puzzles.json")
                 });
             }
         });
-        for (let i = 0; i < 3; i++) {
+        let i = 0;
+        for (i = 0; i < 3; i++) {
             applyColumnStylePuzzle(i)
-        }
+        };
 
         // Inicializa o botão como desabilitado
         document.getElementById("next-btn").disabled = true;
@@ -107,7 +109,7 @@ fetch("./data/puzzles.json")
         // Ação ao botão "Avançar"
         document.getElementById("next-btn").addEventListener("click", function () {
             if (!this.disabled) {
-                alert("Parabéns! Você pode avançar.");
+                window.location.href = "segunda-pagina.html";
             }
         });
     });
