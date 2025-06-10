@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Página 3</title>
+</head>
+<body>
+    <marquee scrollamount="20">Bem-vindo ao terceiro nível do jogo!!</marquee>
+    <header>
+        <div id="banner-border">
+            <div id="banner-container" class="snaking-border">
+                    <h1 id="banner-text">Bem-vindo à Página 3</h1>
+                    <img class="banner-gif" id="banner-gif-left" src="img/computer.gif" alt="GIF Esquerdo">
+                    <img class="banner-gif" id="banner-gif-right" src="img/globe2.gif" alt="GIF Direito">
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar main-content">
+            <ul id="sidebar-list">
+                <!-- Conteúdo temporário, será trocado para ícones menos intuitivos e nomes menos descritivos -->
+                <li class="sidebar-item" id="sidebar-default-page" data-target="default-page">
+                    <i class="material-icons">home</i>
+                    <span class="sidebar-text">Default Page</span>
+                <li class="sidebar-item" id="sidebar-puzzle-select" data-target="puzzle-select">
+                    <i class="material-icons">select_all</i>
+                    <span class="sidebar-text">Puzzle Select</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-form" data-target="puzzle-form">
+                    <i class="material-icons">edit</i>
+                    <span class="sidebar-text">Puzzle Form</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-images" data-target="puzzle-images">
+                    <i class="material-icons">image</i>
+                    <span class="sidebar-text">Puzzle Images</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-typing" data-target="puzzle-typing">
+                    <i class="material-icons">keyboard</i>
+                    <span class="sidebar-text">Puzzle Typing</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-darkmode" data-target="puzzle-darkmode">
+                    <i class="material-icons">dark_mode</i>
+                    <span class="sidebar-text">Puzzle Dark Mode</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content puzzle-content">
+            <section class="puzzle-page active" id="default-page">
+                <h2>Essa página está ruim, não está?</h2>
+                <p>Elementos essenciais de um website moderno estão faltando ou estão errados aqui. Você consegue adivinhar o quê?</p>
+                <p>Nota: esta lista deve estar oculta a princípio.</p>
+                <ul>
+                    <li>Layout tão datado que tem idade para dirigir</li>
+                    <li>GIFs e animações exageradas, inclindo aquela faixa lá em cima.</li>
+                    <li>Comic Sans...</li>
+                    <li>Falta de responsividade</li>
+                    <li>Quebrou o padrão que o próprio site estabeleceu nas páginas anteriores</li>
+                    <li>(Listar todas)</li>
+                </ul>
+            </section>
+            <section class="puzzle-page" id="puzzle-select">
+                <p>Esta página diz qual dos puzzles o usuário precisa resolver para passar a fase</p>
+            </section>
+            <section class="puzzle-page" id="puzzle-form">
+                <p>Formulário com funcionalidade ruim (Seleção imprópria de data, labels confusos, campos obrigatórios e opcionais mal demarcados, falta de aviso do quê está errado...)</p>
+            </section>
+            <section class="puzzle-page" id="puzzle-images">
+                <p>Grid de imagens e um prompt dizendo quais devem ser clicadas, mas não há nenhuma indicação de quais imagens já foram selecionadas</p>
+            </section>
+            <section class="puzzle-page" id="puzzle-typing">
+                <p>Pergunta vaga sobre a imagem, a resposta precisa ter a primeira letra maiúscula mas isso não vai ser dito</p>
+                <h2>O que é isso?</h2>
+                <img src="" alt="" id="puzzle-typing-img">
+                <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
+                <button id="puzzle-submit">Verificar</button>
+            </section>
+            <section class="puzzle-page" id="puzzle-darkmode">
+                <p>Página escura demais, como pessoas com baixa visão enxergam uma página dark mode mal feita.</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
