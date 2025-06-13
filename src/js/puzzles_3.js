@@ -52,7 +52,7 @@ nextBtn.addEventListener("click", () => {
 shuffleSidebar();
 
 // Carrega os puzzles
-fetch("./data/puzzles.json")
+fetch("/resources/data/puzzles.json")
     .then((response) => response.json())
     .then((puzzles) => {
         const level3 = puzzles["level-3"];

@@ -1,10 +1,10 @@
-fetch("./data/puzzles.json")
+fetch("/resources/data/puzzles.json")
     .then((response) => response.json())
-    .then((puzzles) => {
+    .then((asfsadg) => {
+        puzzles = JSON.parse(sessionStorage.getItem("puzzles"));
         const level1 = puzzles["level-1"];
         const categories = Object.values(level1);
 
-        // Array para contar os usos do help por categoria
         const helpCounts = Array(categories.length).fill(0);
 
         // Seleciona uma questão aleatória de cada categoria para cada coluna

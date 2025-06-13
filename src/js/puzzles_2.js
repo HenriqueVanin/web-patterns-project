@@ -1,4 +1,4 @@
-fetch("./data/puzzles.json")
+fetch("/resources/data/puzzles.json")
   .then((res) => res.json())
   .then(puzzles => {
     // 1) IMAGEM (col 1)
