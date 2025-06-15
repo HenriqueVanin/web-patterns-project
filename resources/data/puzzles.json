@@ -170,5 +170,97 @@
         ]
     },
     "level-3": {
+        "puzzle-typing": [
+            {
+                "path": "/resources/img/pagina-3/puzzle-typing/cachorro.jpg",
+                "answer": "Cachorro"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-typing/img/gato.jpg",
+                "answer": "Gato"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-typing/img/leão.jpg",
+                "answer": "Leão"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-typing/img/tubarao.jpg",
+                "answer": "Tubarão"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-typing/img/capivara.jpg",
+                "answer": "Capivara"
+            }
+        ],
+        "puzzle-clicking": {
+            "flores": [
+                "/resources/img/pagina-3/puzzle-clicking/flor-1.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/flor-2.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/flor-3.jpg"
+            ],
+            "frutas": [
+                "/resources/img/pagina-3/puzzle-clicking/fruta-1.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/fruta-2.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/fruta-3.jpg"
+            ],
+            "lápis": [
+                "/resources/img/pagina-3/puzzle-clicking/lapis-1.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/lapis-2.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/lapis-3.jpg"
+            ],
+            "livros": [
+                "/resources/img/pagina-3/puzzle-clicking/livro-1.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/livro-2.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/livro-3.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/livro-4.jpg"
+            ],
+            "montanhas": [
+                "/resources/img/pagina-3/puzzle-clicking/montanha-1.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/montanha-2.jpg",
+                "/resources/img/pagina-3/puzzle-clicking/montanha-3.jpg"
+            ]
+        },
+        "puzzle-form": [
+            {
+                "path": "/resources/img/pagina-3/puzzle-form/anitta.jpg",
+                "nome-real": "Larissa de Macedo Machado",
+                "nome-artistico": "Anitta",
+                "pais-de-nascimento": "Brasil",
+                "cidade-de-nascimento": "Rio de Janeiro",
+                "data-de-nascimento": "30/03/1993"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-form/bowie.jpg",
+                "nome-real": "David Robert Jones",
+                "nome-artistico": "David Bowie",
+                "pais-de-nascimento": "Reino Unido",
+                "cidade-de-nascimento": "Londres",
+                "data-de-nascimento": "08/01/1947"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-form/dogg.jpg",
+                "nome-real": "Calvin Cordozar Broadus Jr.",
+                "nome-artistico": "Snoop Dogg",
+                "pais-de-nascimento": "Estados Unidos",
+                "cidade-de-nascimento": "Long Beach",
+                "data-de-nascimento": "20/10/1971"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-form/eminem.jpg",
+                "nome-real": "Marshall Bruce Mathers III",
+                "nome-artistico": "Eminem",
+                "pais-de-nascimento": "Estados Unidos",
+                "cidade-de-nascimento": "Saint Joseph",
+                "data-de-nascimento": "17/10/1972"
+            },
+            {
+                "path": "/resources/img/pagina-3/puzzle-form/mercury.jpg",
+                "nome-real": "Farrokh Bulsara",
+                "nome-artistico": "Freddie Mercury",
+                "pais-de-nascimento": "Zanzibar",
+                "cidade-de-nascimento": "Stone Town",
+                "data-de-nascimento": "05/09/1946"
+            }
+        ]
     }
 }
