@@ -15,8 +15,8 @@
         <div id="banner-border">
             <div id="banner-container" class="snaking-border">
                 <h1 id="banner-text">Bem-vindo à Página 3</h1>
-                <img class="banner-gif" id="banner-gif-left" src="img/computer.gif" alt="GIF Esquerdo">
-                <img class="banner-gif" id="banner-gif-right" src="img/globe2.gif" alt="GIF Direito">
+                <img class="banner-gif" id="banner-gif-left" src="/resources/img/pagina-3/assets/computer.gif" alt="GIF Esquerdo">
+                <img class="banner-gif" id="banner-gif-right" src="/resources/img/pagina-3/assets/globe2.gif" alt="GIF Direito">
             </div>
         </div>
     </header>
@@ -35,22 +35,18 @@
                     <i class="material-icons">edit</i>
                     <span class="sidebar-text">Puzzle Form</span>
                 </li>
-                <li class="sidebar-item" id="sidebar-puzzle-images" data-target="puzzle-images">
+                <li class="sidebar-item" id="sidebar-puzzle-clicking" data-target="puzzle-clicking">
                     <i class="material-icons">image</i>
-                    <span class="sidebar-text">Puzzle Images</span>
+                    <span class="sidebar-text">Puzzle Clicking</span>
                 </li>
                 <li class="sidebar-item" id="sidebar-puzzle-typing" data-target="puzzle-typing">
                     <i class="material-icons">keyboard</i>
                     <span class="sidebar-text">Puzzle Typing</span>
                 </li>
-                <li class="sidebar-item" id="sidebar-puzzle-darkmode" data-target="puzzle-darkmode">
-                    <i class="material-icons">dark_mode</i>
-                    <span class="sidebar-text">Puzzle Dark Mode</span>
-                </li>
             </ul>
         </nav>
         <div class="main-content puzzle-content">
-            <section class="puzzle-page active" id="default-page">
+            <section class="puzzle-page" id="default-page">
                 <h2>Essa página está ruim, não está?</h2>
                 <p>Elementos essenciais de um website moderno estão faltando ou estão errados aqui. Você consegue
                     adivinhar o quê?</p>
@@ -60,38 +56,69 @@
                     <li>GIFs e animações exageradas, inclindo aquela faixa lá em cima.</li>
                     <li>Comic Sans...</li>
                     <li>Falta de responsividade</li>
-                    <li>Quebrou o padrão que o próprio site estabeleceu nas páginas anteriores</li>
-                    <li>(Listar todas)</li>
+                    <li>Quebrou o padrão de puzzles que o próprio site estabeleceu nas páginas anteriores</li>
+                    <li>Menu sem consistência de ordem e com iconografia/nomes não convencionais, simulando um site que não segue convenções</li>
                 </ul>
             </section>
             <section class="puzzle-page" id="puzzle-select">
                 <p>Esta página diz qual dos puzzles o usuário precisa resolver para passar a fase</p>
             </section>
-            <section class="puzzle-page" id="puzzle-form">
-                <p>Formulário com funcionalidade ruim (Seleção imprópria de data, labels confusos, campos obrigatórios e
-                    opcionais mal demarcados, falta de aviso do quê está errado...)</p>
+            <section class="puzzle-page active" id="puzzle-form">
+                <p>Formulário com funcionalidade ruim</p>
+                <ul>
+                    <li>Labels com posições ambíguas</li>
+                    <li>Campos obrigatórios mal indicados e sem explicação, sem seguir convenções</li>
+                    <li>Falta de validação/regex nos campos de texto</li>
+                    <li>Todos são inputs de texto, mesmo quando o mais adequado seria outro (data, dropdown...)</li>
+                    <li>Auto foco no campo que não devia</li>
+                    <li>Falta placeholder ou outras indicações para o formato de data</li>
+                </ul>
+                <h2>Quem é esta pessoa?</h2>
+                <img src="" alt="" id="puzzle-form-img" style="width: 100px;">
+                <form id="puzzle-form">
+                    <label for="decoy" class="puzzle-form-label decoy">Nome Real</label>
+                    <input type="text" id="decoy" class="puzzle-form-input decoy" name="decoy">
+
+                    <input type="text" id="name" class="puzzle-form-input" name="name" required>
+                    <label for="name" class="puzzle-form-label req">Nome Artístico</label>
+
+                    <input type="text" id="country" class="puzzle-form-input" name="country">
+                    <label for="country" class="puzzle-form-label opt">País de nascimento</label>
+
+                    <input type="text" id="city" class="puzzle-form-input" name="city" autofocus>
+                    <label for="city" class="puzzle-form-label opt">Cidade de Nascimento</label>
+
+                    <input type="text" id="date" class="puzzle-form-input" name="date" required>
+                    <label for="date" class="puzzle-form-label req">Data de Nascimento</label>
+
+                    <button type="submit" class="puzzle-form-button">Enviar</button>
+                </form>
             </section>
             <section class="puzzle-page" id="puzzle-images">
-                <p>Grid de imagens e um prompt dizendo quais devem ser clicadas, mas não há nenhuma indicação de quais
-                    imagens já foram selecionadas</p>
+                <p>Grid de imagens e um prompt dizendo quais devem ser clicadas.</p>
+                <ul>
+                    <li>Falta indicação de qual imagem já foi clicada</li>
+                    <li>Falta de feedback visual ao clicar</li>
+                    <li>Imagens próximas demais</li>
+                </ul>
             </section>
             <section class="puzzle-page" id="puzzle-typing">
-                <p>Pergunta vaga sobre a imagem, a resposta precisa ter a primeira letra maiúscula mas isso não vai ser
-                    dito</p>
+                <p>Pergunta vaga sobre a imagem</p>
+                <ul>
+                    <li>A pergunta não é explícita o suficiente para saber o que responder</li>
+                    <li>Falta de feedback visual ao digitar</li>
+                    <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e acentuação exatamente iguais à do gabarito)</li>
                 <h2>O que é isso?</h2>
                 <img src="" alt="" id="puzzle-typing-img">
                 <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
                 <button id="puzzle-submit">Verificar</button>
-            </section>
-            <section class="puzzle-page" id="puzzle-darkmode">
-                <p>Página escura demais, como pessoas com baixa visão enxergam uma página dark mode mal feita.</p>
             </section>
             <form>
                 <button id="next-btn" type="button" class="next-btn">Avançar</button>
             </form>
         </div>
     </main>
-
+    <script src="/src/js/load-puzzles.js" defer></script>
     <script src="/src/js/puzzles_3.js" defer></script>
 </body>
 

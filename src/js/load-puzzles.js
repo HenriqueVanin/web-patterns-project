@@ -19,7 +19,7 @@ function fetchRandomPuzzles(level)
             puzzlesData = fetchPuzzlesLvl2(lvl);
             break;
         case 3:
-            fpuzzlesData = etchPuzzlesLvl3(lvl);
+            puzzlesData = fetchPuzzlesLvl3(lvl);
             break;
     }
     return puzzlesData;
@@ -49,5 +49,45 @@ function fetchPuzzlesLvl2(data)
 
 function fetchPuzzlesLvl3(data)
 {
+    const sections = Object.keys(data);
 
+    // Seleciona uma imagem aleatória para puzzle-typing
+    const indexTyping = Math.floor(Math.random() * data["puzzle-typing"].length);
+    const selectedTypingImagePath = data["puzzle-typing"][indexTyping];
+    const selectedTypingAnswer = selectedTypingImagePath.answer;
+
+    // Seleciona uma categoria aleatória para puzzle-clicking
+    const categories = Object.keys(data['puzzle-clicking']);
+    const selectedCategory = categories[Math.floor(Math.random() * categories.length)];
+    // Extraindo todos os caminhos de todas as categorias e embaralhando
+    let allPaths = [];
+    for (let category of categories) {
+        allPaths = allPaths.concat(data['puzzle-clicking'][category]);
+    }
+    allPaths.sort(() => Math.random() - 0.5);
+    // Indexes correspondentes aos caminhos selecionados na categoria escolhida
+    const selectedPaths = data['puzzle-clicking'][selectedCategory];
+    const indexes = [];
+    for (let i = 0; i < allPaths.length; i++) {
+        if (selectedPaths.includes(allPaths[i])) {
+            indexes.push(i);
+        }
+    }
+
+    // Seleciona um artista aleatório para o puzzle-form
+    const indexForm = Math.floor(Math.random() * data["puzzle-form"].length);
+    const selectedForm = data["puzzle-form"][indexForm];
+
+    return {
+        typing: {
+            path: selectedTypingImagePath.path,
+            answer: selectedTypingAnswer,
+        },
+        clicking: {
+            category: selectedCategory,
+            paths: allPaths,
+            indexes: indexes,
+        },
+        form: selectedForm
+    }
 }
