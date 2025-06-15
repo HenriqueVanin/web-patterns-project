@@ -1,3 +1,5 @@
+/** Para ser substituído por script-pagina-3.js */
+
 // Embaralha os itens da sidebar
 function shuffleSidebar() {
     let sidebar = document.getElementById('sidebar-list');

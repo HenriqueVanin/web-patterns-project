@@ -1,3 +1,5 @@
+/** Para ser substituído por script-pagina-1.js */
+
 fetch("/resources/data/puzzles.json")
     .then((response) => response.json())
     .then((asfsadg) => {
