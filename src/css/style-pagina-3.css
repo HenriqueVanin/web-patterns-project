@@ -5,7 +5,7 @@
 }
 
 html {
-    background: url(imf/page-background.jpg);
+    background: url(/resources/img/pagina-3/assets/page-background.jpg);
 }
 
 body {
@@ -151,4 +151,37 @@ nav {
 
 .puzzle-page.active {
     display: block;
+}
+
+/****** PUZZLE FORM ******/
+
+form#puzzle-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label.puzzle-form-label {
+    margin-left: 10px;
+}
+
+input.puzzle-form-input {
+    margin-left: 10px;
+    font-size: 1em;
+    width: 50%;
+}
+
+button.puzzle-form-button {
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+input.decoy {
+    display: none;
+}
+
+label.opt::after, label.decoy::after {
+    content: " *";
+    color: black;
 }

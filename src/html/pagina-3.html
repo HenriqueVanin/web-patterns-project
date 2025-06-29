@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-16">
+    <link rel="stylesheet" href="/src/css/style-pagina-3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Página 3</title>
+</head>
+
+<body>
+    <!-- Este elemento está obsoleto e pode causar problemas em um verificador. É intencional. Websites antigos usavam isso. -->
+    <marquee scrollamount="20">Bem-vindo ao terceiro nível do jogo!!</marquee>
+    <header>
+        <div id="banner-border">
+            <div id="banner-container" class="snaking-border">
+                <h1 id="banner-text">Bem-vindo à Página 3</h1>
+                <img class="banner-gif" id="banner-gif-left" src="/resources/img/pagina-3/assets/computer.gif" alt="GIF Esquerdo">
+                <img class="banner-gif" id="banner-gif-right" src="/resources/img/pagina-3/assets/globe2.gif" alt="GIF Direito">
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar main-content">
+            <ul id="sidebar-list">
+                <!-- Conteúdo temporário, será trocado para ícones menos intuitivos e nomes menos descritivos -->
+                <li class="sidebar-item" id="sidebar-default-page" data-target="default-page">
+                    <i class="material-icons">home</i>
+                    <span class="sidebar-text">Default Page</span>
+                <li class="sidebar-item" id="sidebar-puzzle-select" data-target="puzzle-select">
+                    <i class="material-icons">select_all</i>
+                    <span class="sidebar-text">Puzzle Select</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-form" data-target="puzzle-form">
+                    <i class="material-icons">edit</i>
+                    <span class="sidebar-text">Puzzle Form</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-clicking" data-target="puzzle-clicking">
+                    <i class="material-icons">image</i>
+                    <span class="sidebar-text">Puzzle Clicking</span>
+                </li>
+                <li class="sidebar-item" id="sidebar-puzzle-typing" data-target="puzzle-typing">
+                    <i class="material-icons">keyboard</i>
+                    <span class="sidebar-text">Puzzle Typing</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content puzzle-content">
+            <section class="puzzle-page" id="default-page">
+                <h2>Essa página está ruim, não está?</h2>
+                <p>Elementos essenciais de um website moderno estão faltando ou estão errados aqui. Você consegue
+                    adivinhar o quê?</p>
+                <p>Nota: esta lista deve estar oculta a princípio.</p>
+                <ul>
+                    <li>Layout tão datado que tem idade para dirigir</li>
+                    <li>GIFs e animações exageradas, inclindo aquela faixa lá em cima.</li>
+                    <li>Comic Sans...</li>
+                    <li>Falta de responsividade</li>
+                    <li>Quebrou o padrão de puzzles que o próprio site estabeleceu nas páginas anteriores</li>
+                    <li>Menu sem consistência de ordem e com iconografia/nomes não convencionais, simulando um site que não segue convenções</li>
+                </ul>
+            </section>
+            <section class="puzzle-page" id="puzzle-select">
+                <p>Esta página diz qual dos puzzles o usuário precisa resolver para passar a fase</p>
+            </section>
+            <section class="puzzle-page active" id="puzzle-form">
+                <p>Formulário com funcionalidade ruim</p>
+                <ul>
+                    <li>Labels com posições ambíguas</li>
+                    <li>Campos obrigatórios mal indicados e sem explicação, sem seguir convenções</li>
+                    <li>Falta de validação/regex nos campos de texto</li>
+                    <li>Todos são inputs de texto, mesmo quando o mais adequado seria outro (data, dropdown...)</li>
+                    <li>Auto foco no campo que não devia</li>
+                    <li>Falta placeholder ou outras indicações para o formato de data</li>
+                </ul>
+                <h2>Quem é esta pessoa?</h2>
+                <img src="" alt="" id="puzzle-form-img" style="width: 100px;">
+                <form id="puzzle-form">
+                    <label for="decoy" class="puzzle-form-label decoy">Nome Real</label>
+                    <input type="text" id="decoy" class="puzzle-form-input decoy" name="decoy">
+
+                    <input type="text" id="name" class="puzzle-form-input" name="name" required>
+                    <label for="name" class="puzzle-form-label req">Nome Artístico</label>
+
+                    <input type="text" id="country" class="puzzle-form-input" name="country">
+                    <label for="country" class="puzzle-form-label opt">País de nascimento</label>
+
+                    <input type="text" id="city" class="puzzle-form-input" name="city" autofocus>
+                    <label for="city" class="puzzle-form-label opt">Cidade de Nascimento</label>
+
+                    <input type="text" id="date" class="puzzle-form-input" name="date" required>
+                    <label for="date" class="puzzle-form-label req">Data de Nascimento</label>
+
+                    <button type="submit" class="puzzle-form-button">Enviar</button>
+                </form>
+            </section>
+            <section class="puzzle-page" id="puzzle-images">
+                <p>Grid de imagens e um prompt dizendo quais devem ser clicadas.</p>
+                <ul>
+                    <li>Falta indicação de qual imagem já foi clicada</li>
+                    <li>Falta de feedback visual ao clicar</li>
+                    <li>Imagens próximas demais</li>
+                </ul>
+            </section>
+            <section class="puzzle-page" id="puzzle-typing">
+                <p>Pergunta vaga sobre a imagem</p>
+                <ul>
+                    <li>A pergunta não é explícita o suficiente para saber o que responder</li>
+                    <li>Falta de feedback visual ao digitar</li>
+                    <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e acentuação exatamente iguais à do gabarito)</li>
+                <h2>O que é isso?</h2>
+                <img src="" alt="" id="puzzle-typing-img">
+                <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
+                <button id="puzzle-submit">Verificar</button>
+            </section>
+            <form>
+                <button id="next-btn" type="button" class="next-btn">Avançar</button>
+            </form>
+        </div>
+    </main>
+    <script src="/src/js/load-puzzles.js" defer></script>
+    <script src="/src/js/puzzles_3.js" defer></script>
+</body>
+
+</html>

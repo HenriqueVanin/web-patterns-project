@@ -1,3 +1,5 @@
+/** Para ser substituído por script-pagina-3.js */
+
 // Embaralha os itens da sidebar
 function shuffleSidebar() {
     let sidebar = document.getElementById('sidebar-list');
@@ -52,7 +54,7 @@ nextBtn.addEventListener("click", () => {
 shuffleSidebar();
 
 // Carrega os puzzles
-fetch("./data/puzzles.json")
+fetch("/resources/data/puzzles.json")
     .then((response) => response.json())
     .then((puzzles) => {
         const level3 = puzzles["level-3"];
