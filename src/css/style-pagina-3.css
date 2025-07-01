@@ -181,7 +181,8 @@ input.decoy {
     display: none;
 }
 
-label.opt::after, label.decoy::after {
+label.opt::after,
+label.decoy::after {
     content: " *";
     color: black;
 }
