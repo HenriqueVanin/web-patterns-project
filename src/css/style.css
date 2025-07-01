@@ -272,6 +272,8 @@ input[type="text"] {
     background-color: #c5b500;
     padding: 20px;
     border-radius: 5px;
+    user-select: none;
+    /* Bloqueia seleção de texto */
 }
 
 .page-1-category-1-puzzle-2 p {
@@ -279,6 +281,8 @@ input[type="text"] {
     background-color: #e6e600;
     padding: 20px;
     border-radius: 5px;
+    user-select: none;
+    /* Bloqueia seleção de texto */
 }
 
 .page-1-category-1-puzzle-3 p {
@@ -286,34 +290,66 @@ input[type="text"] {
     background-color: #2c2c2c;
     padding: 20px;
     border-radius: 5px;
+    user-select: none;
+    /* Bloqueia seleção de texto */
 }
 
 .page-1-category-2-puzzle-1 p {
     font-size: 0.5rem;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 .page-1-category-2-puzzle-2 p {
     font-size: 0.8rem;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 .page-1-category-2-puzzle-3 p {
     font-size: 1.1rem;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 /* Problema de espaçamento: texto muito junto */
 .page-1-category-3-puzzle-1 p {
     letter-spacing: -2px;
     line-height: 0.7;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 .page-1-category-3-puzzle-2 p {
     letter-spacing: -1px;
     line-height: 1;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 .page-1-category-3-puzzle-3 p {
     letter-spacing: 0;
     line-height: 1.4;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    /* Impede redimensionamento do texto */
+    text-size-adjust: none;
+    /* Impede redimensionamento do texto */
 }
 
 
