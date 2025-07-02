@@ -5,56 +5,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Primeira Página</title>
-  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
 </head>
 
 <body>
+  <header>
+    <h4>Primeiro desafio</h4>
+    <h4>UTFPR - Padrões Web</h4>
+  </header>
   <main>
-    <header>
-      <h4>Primeiro desafio</h4>
-      <h4>UTFPR - Padrões Web</h4>
-    </header>
     <div class="title">
-      <h1>Clareza na informação</h1>
+      <p class="page-title">Clareza na informação</p>
       <p>Resolva os três desafios abaixo e acerte todas as senhas para liberar o botão "Avançar".</p>
     </div>
     <div id="column-1" class="column">
-      <h2 id="col-title-1"></h2>
+      <p class="column-title" id="col-title-1"></p>
       <p>Um bom contraste facilita a leitura e torna o site mais acessível para todos. Vamos
         juntos criar páginas mais amigáveis! Mas vamos ao nosso enigma:</p>
       <p id="col-tip-1"></p>
-      <form class="puzzle-form" data-answer="">
+      <div class="puzzle-form">
         <span class="result"></span>
-        <input type="text" placeholder="Senha do enigma 1" autocomplete="off" />
+        <div class="row">
+          <input type="text" placeholder="Senha do enigma 1" autocomplete="off" />
+          <button type="button" id="check-puzzle-1" class="check-btn">Verificar </button>
+        </div>
         <button type="button" id="help-puzzle-1" class="help-btn">Quero ajuda</button>
-      </form>
+      </div>
     </div>
     <div id="column-2" class="column">
-      <h2 id="col-title-2"></h2>
+      <p class="column-title" id="col-title-2"></p>
       <p>Texto pequeno demais dificulta a leitura e pode causar desconforto visual. Vamos
         juntos criar páginas mais confortáveis! Mas vamos ao nosso enigma:</p>
       <p id="col-tip-2"></p>
-      <form class="puzzle-form" data-answer="">
+      <div class="puzzle-form">
         <span class="result"></span>
-        <input type="text" placeholder="Senha do enigma 2" autocomplete="off" />
+        <div class="row">
+          <input type="text" placeholder="Senha do enigma 2" autocomplete="off" />
+          <button type="button" id="check-puzzle-2" class="check-btn">Verificar </button>
+        </div>
         <button type="button" id="help-puzzle-2" class="help-btn">Quero ajuda</button>
-      </form>
+      </div>
     </div>
     <div id="column-3" class="column">
-      <h2 id="col-title-3"></h2>
+      <p class="column-title" id="col-title-3"></p>
       <p>Espaçamento adequado entre os elementos melhora a legibilidade e a estética do site. Vamos
         juntos criar páginas mais organizadas! Mas vamos ao nosso enigma:</p>
       <p id="col-tip-3"></p>
-      <form class="puzzle-form" data-answer="">
+      <div class="puzzle-form">
         <span class="result"></span>
-        <input type="text" placeholder="Senha do enigma 3" autocomplete="off" />
+        <div class="row">
+          <input type="text" placeholder="Senha do enigma 3" autocomplete="off" />
+          <button type="button" id="check-puzzle-3" class="check-btn">Verificar</button>
+        </div>
         <button type="button" id="help-puzzle-3" class="help-btn">Quero ajuda</button>
-      </form>
+      </div>
     </div>
-    <form>
-      <button id="next-btn" type="button" class="next-btn" onsubmit="jumpPage(event)">Avançar</button>
-    </form>
+    <button id="next-btn" type="button" class="next-btn" onsubmit="jumpPage(event)">Avançar</button>
   </main>
+  <footer>
+    Desenvolvido por Augusto Freitas - João Mathias - Gabriel Lira - Henrique Vanin<br>
+    Professor Coodenador - Leonelo Almeida
+  </footer>
   <script src="/src/js/utils.js"></script>
   <script src="/src/js/load-puzzles.js" defer></script>
   <script src="/src/js/script-pagina-1.js" defer></script>

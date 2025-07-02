@@ -5,42 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Padrões Web</title>
-  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
 </head>
 
 <body>
+  <header>
+    <h4>Projeto Padrões Web</h4>
+    <h4>UTFPR Curitiba</h4>
+  </header>
   <main>
-    <header>
-      <h4>Projeto Padrões Web</h4>
-      <h4>UTFPR Curitiba</h4>
-    </header>
     <div class="title">
-      <h1>Verifique seus conhecimentos dos conceitos básicos de Web design</h1>
+      <p class="page-title">Desafio de conhecimentos do Web design</p>
       <p>
-        Você passará por desafios, encontre a pista e digite a senha para avançar
+        Você passará por enigmas, encontre a pista e digite a senha para avançar
         de etapa.
       </p>
     </div>
     <div class="column">
-      <h2>1 - Inicie o desafio :)</h2>
-      <p>Cada etapa possuirá três desafios. Cada desafio possui uma senha para avançar de etapa.</p>
+      <p class="column-title">1 - Inicie o enigma :)</p>
+      <p>Cada etapa possuirá três ou dois enigmas. Cada enigma possui uma senha para avançar de etapa.</p>
       <p></p>
     </div>
     <div class="column">
-      <h2>2 - Busque a senha...</h2>
+      <p class="column-title">2 - Busque a senha...</p>
       <p>Ao encontrar a resposta, digite no campo que estará
-        disponível em cada desafio. Se tiver dificuldade, clique no botão de ajuda!</p>
+        disponível em cada enigma. Se tiver dificuldade, clique no botão de ajuda!</p>
       <p></p>
     </div>
     <div class="column">
-      <h2>3 - Desvende todos os desafios!</h2>
-      <p>Para avançar, você deve digitar corretamente as senhas de cada desafio.</p>
+      <p class="column-title">3 - Desvende todos os enigmas!</p>
+      <p>Para avançar, você deve digitar corretamente as senhas de cada enigma.</p>
       <p></p>
     </div>
-    <form onsubmit="iniciar(event)">
-      <button type="submit">Iniciar desafio</button>
-    </form>
+    <button class="next-btn" id="start" type="submit" onclick={iniciar(event)}>Iniciar desafio</button>
   </main>
+  <footer>
+    Desenvolvido por Augusto Freitas - João Mathias - Gabriel Lira - Henrique Vanin<br>
+    Professor Coodenador - Leonelo Almeida
+  </footer>
   <script>
     function iniciar(event) {
       event.preventDefault();

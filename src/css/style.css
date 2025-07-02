@@ -8,15 +8,16 @@ body {
 
 header {
     grid-area: header;
-    width: 100%;
     max-width: 100%;
     flex-shrink: 0;
     color: #d6d6d6;
+    background-color: rgba(44, 44, 44, 0.4);
     font-size: 1rem;
     display: flex;
     gap: 20px;
+    padding-left: 3rem;
+    height: 50px;
     align-items: center;
-    border-radius: 5px;
 }
 
 body {
@@ -35,23 +36,37 @@ main {
     flex: 1 0 auto;
     display: grid;
     grid-template-areas:
-        "header header header"
         "title title title"
-        "col3 col2 col1"
+        "col2 col3 col1"
         "form form form";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     column-gap: 40px;
     row-gap: 20px;
     padding: 50px;
     justify-items: center;
 }
 
+.main-2 {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "col2 col1"
+        "form form";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 50px;
+    justify-items: center;
+}
+
+
 /* Breakpoint para tablets */
 @media (max-width: 1400px) {
     main {
         grid-template-areas:
-            "header"
             "title"
             "col3"
             "col2"
@@ -61,6 +76,22 @@ main {
         grid-template-rows: repeat(6, auto);
         gap: 20px 0;
         padding: 24px 16px;
+    }
+
+    .main-2 {
+        flex: 1 0 auto;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "col2"
+            "col1"
+            "form";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        column-gap: 40px;
+        row-gap: 20px;
+        padding: 50px;
+        justify-items: center;
     }
 
     .column {
@@ -74,6 +105,12 @@ main {
         padding: 12px 4px;
         gap: 15px 0;
     }
+
+    .main-2 {
+        padding: 12px 4px;
+        gap: 15px 0;
+    }
+
 
     .column {
         width: 100%;
@@ -110,7 +147,6 @@ p {
 
 /* Formulários e botões */
 form {
-    grid-area: form;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -140,13 +176,19 @@ input[type="submit"]:hover {
 
 input[type="text"] {
     padding: 10px;
-    margin: 10px;
     border: 1px solid #a5a5a5;
     border-radius: 5px;
     color: #ffffff;
     font-size: 1rem;
     background-color: #525252;
-    width: 93%;
+    width: 100%;
+}
+
+input[type="text"]:disabled {
+    background-color: #6c757d;
+    color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 
@@ -162,16 +204,15 @@ input[type="text"] {
     min-height: 0;
 }
 
-.column:nth-child(1) {
+.column-1 {
     grid-area: col1;
-
 }
 
-.column:nth-child(2) {
+.column-2 {
     grid-area: col2;
 }
 
-.column:nth-child(3) {
+.column-3 {
     grid-area: col3;
 }
 
@@ -179,7 +220,7 @@ input[type="text"] {
     background: linear-gradient(0deg, rgba(24, 24, 24, 0.85) 0%, rgba(29, 29, 29, 0.7) 100%);
     padding: 15px;
     color: #ffffff;
-    border: 1px solid #3b3b3b;
+    border: 1px solid #808080;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -201,7 +242,6 @@ input[type="text"] {
     font-weight: bold;
     text-align: center;
     width: 100%;
-    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -215,10 +255,12 @@ input[type="text"] {
 }
 
 .next-btn {
+    grid-area: form;
     color: #fff;
     background-color: #129e7b;
     border: none;
     border-radius: 5px;
+    font-size: large;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, color 0.2s, opacity 0.3s;
     max-width: 320px;
@@ -253,6 +295,14 @@ input[type="text"] {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
     transition: background 0.15s, color 0.15s;
     white-space: nowrap;
+}
+
+.help-btn:disabled,
+.help-btn.disabled {
+    background: #6c757d;
+    color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 .help-btn:hover {
@@ -393,6 +443,17 @@ input[type="text"] {
     max-width: 290px;
 }
 
+.check-btn {
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: #919191 2px solid;
+    cursor: pointer;
+    transition: background 0.2s;
+    max-width: 290px;
+}
+
 .play-btn:hover {
     background: #0f8a64;
 }
@@ -407,4 +468,30 @@ input[type="text"] {
 #col-alt-1,
 #col-lyrics-2 {
     margin-bottom: 1rem;
+}
+
+.column-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.875rem;
+    position: relative;
+    bottom: 0;
 }

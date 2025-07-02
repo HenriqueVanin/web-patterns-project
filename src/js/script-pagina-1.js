@@ -16,22 +16,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adiciona eventos
     document.querySelectorAll(".puzzle-form").forEach((form, idx) => {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            checkAnswer(this);
-            checkAllCorrect();
-        });
-        form
-            .querySelector('input[type="text"]')
-            .addEventListener("input", function () {
+        const checkBtn = document.getElementById(`check-puzzle-${idx + 1}`);
+        if (checkBtn) {
+            checkBtn.addEventListener("click", function (e) {
+                e.preventDefault();
                 checkAnswer(form);
                 checkAllCorrect();
+                // Se a resposta estiver correta, desabilita o input
+                const input = form.querySelector('input[type="text"]');
+                if (input.value.trim().toLowerCase() === form.dataset.answer.toLowerCase()) {
+                    input.disabled = true;
+                    // Aplica os estilos restantes até 3
+                    while (helpCounts[idx] < 3) {
+                        applyColumnStylePuzzle(idx);
+                    }
+                }
             });
+        }
 
         const helpBtn = document.getElementById(`help-puzzle-${idx + 1}`);
         if (helpBtn) {
             helpBtn.addEventListener("click", function () {
                 applyColumnStylePuzzle(idx);
+                helpBtn.disabled = true;
+                let remaining = 40;
+                const originalText = helpBtn.textContent;
+                helpBtn.textContent = `Aguarde ${remaining}s`;
+                const interval = setInterval(() => {
+                    remaining--;
+                    helpBtn.textContent = `Aguarde ${remaining}s`;
+                    if (remaining <= 0) {
+                        clearInterval(interval);
+                        helpBtn.disabled = false;
+                        helpBtn.textContent = originalText;
+                    }
+                }, 1000);
             });
         }
     });

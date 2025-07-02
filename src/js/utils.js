@@ -2,6 +2,8 @@
 function checkAnswer(form) {
     const input = form.querySelector('input[type="text"]');
     const result = form.querySelector(".result");
+
+
     result.classList.remove("correct", "incorrect");
     if (input.value.trim() === "") {
         result.innerHTML = "";

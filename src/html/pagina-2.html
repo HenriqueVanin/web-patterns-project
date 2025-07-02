@@ -5,47 +5,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Segundo Desafio - Audiovisual</title>
-  <link rel="stylesheet" href="/src/css/style-pagina-2.css" />
+  <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
 </head>
 
 <body>
-  <main>
-    <header>
-      <h4>Segundo desafio</h4>
-      <h4>UTFPR - Padrões Web</h4>
-    </header>
+  <header>
+    <h4>Segundo desafio</h4>
+    <h4>UTFPR - Padrões Web</h4>
+  </header>
+  <main class="main-2">
     <div class="title">
-      <h1>Acessibilidade Audiovisual</h1>
+      <p class="page-title">Acessibilidade Audiovisual</p>
       <p>Resolva os dois desafios abaixo relacionados a imagem e áudio. Encontre as respostas corretas para liberar o
         botão "Avançar".</p>
     </div>
     <div id="column-1" class="column">
-      <h2 id="col-title-1"></h2>
+      <p class="column-title" id="col-title-1"></p>
       <img id="puzzle-img-1" src="" alt="" />
       <p id="col-alt-1" aria-live="polite"></p>
-      <form class="puzzle-form" data-answer="" data-bad-alt="" data-good-alt="">
+      <div class="puzzle-form" data-answer="" data-bad-alt="" data-good-alt="">
         <span class="result"></span>
-        <input type="text" placeholder="Senha do enigma da imagem" autocomplete="off" />
-        <button type="button" id="help-puzzle-1" class="help-btn">Quero ajuda</button>
-      </form>
+        <div class="row"> <input type="text" placeholder="Senha do enigma da imagem" autocomplete="off" /><button
+            type="button" id="check-puzzle-1" class="check-btn">Verificar </button></div>
+      </div> <button type="button" id="help-puzzle-1" class="help-btn">Quero ajuda</button>
     </div>
     <div id="column-2" class="column">
-      <h2 id="col-title-2"></h2>
+      <p class="column-title" id="col-title-2"></p>
       <!-- Novo botão de play -->
       <div id="col-lyrics-2" aria-live="polite"></div>
       <button type="button" id="play-puzzle-2" class="play-btn">
         <span aria-hidden="true">🔊</span>
         Ouvir letra</button>
-      <form class="puzzle-form" data-answer="" data-bad-lang="" data-good-lang="">
+      <div class="puzzle-form" data-answer="" data-bad-lang="" data-good-lang="">
         <span class="result"></span>
-        <input type="text" placeholder="Senha do enigma do áudio" autocomplete="off" />
+        <div class="row"> <input type="text" placeholder="Senha do enigma do áudio" autocomplete="off" /><button
+            type="button" id="check-puzzle-2" class="check-btn">Verificar </button></div>
         <button type="button" id="help-puzzle-2" class="help-btn">Quero ajuda</button>
-      </form>
+      </div>
     </div>
-    <form>
-      <button id="next-btn" type="button" class="next-btn">Avançar</button>
-    </form>
+    <button id="next-btn" type="button" class="next-btn">Avançar</button>
   </main>
+  <footer>
+    Desenvolvido por Augusto Freitas - João Mathias - Gabriel Lira - Henrique Vanin<br>
+    Professor Coodenador - Leonelo Almeida
+  </footer>
   <script src="/src/js/utils.js"></script>
   <script src="/src/js/load-puzzles.js" defer></script>
   <script src="/src/js/script-pagina-2.js" defer></script>

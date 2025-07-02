@@ -12,6 +12,7 @@ fetch("/resources/data/puzzles.json")
     const form1 = col1.querySelector(".puzzle-form");
     const input1 = form1.querySelector("input");
     const res1 = form1.querySelector(".result");
+    const checkBtn1 = document.getElementById("check-puzzle-1");
     const helpBtn1 = document.getElementById("help-puzzle-1");
 
     // init imagem
@@ -32,7 +33,11 @@ fetch("/resources/data/puzzles.json")
     }
 
     helpBtn1.addEventListener("click", () => {
-      if (helpImg < 2) { helpImg++; updateImg(); }
+      if (helpImg < 2) {
+        helpImg++; updateImg();
+        setButtonDowntime(helpBtn1, 40);
+      }
+
     });
 
     // 2) ÁUDIO / LETRAS (coluna 2 com TTS)
@@ -48,6 +53,7 @@ fetch("/resources/data/puzzles.json")
     const input2 = form2.querySelector("input");
     const res2 = form2.querySelector(".result");
     const helpBtn2 = document.getElementById("help-puzzle-2");
+    const checkBtn2 = document.getElementById("check-puzzle-2");
 
     // preenche título e dados
     // const songName = s["song-name"];
@@ -55,6 +61,7 @@ fetch("/resources/data/puzzles.json")
     lyricsDiv.innerHTML = s.lyrics
       .map(line => `<p lang="${s["bad-lang"]}">${line}</p>`)
       .join("");
+    lyricsDiv.classList.add("hidden");
     form2.dataset.badLang = s["bad-lang"];
     form2.dataset.goodLang = s["good-lang"];
     form2.dataset.answer = s.answer;
@@ -75,40 +82,82 @@ fetch("/resources/data/puzzles.json")
         : form2.dataset.badLang;
       readLyrics(currentLang);
     });
-
-    // help só troca o lang das tags <p> e marca helpAud=1
-    helpBtn2.addEventListener("click", () => {
+    const updateLang = () => {
+      console.log(helpAud);
       if (helpAud === 0) {
         lyricsDiv.querySelectorAll("p").forEach(p =>
           p.setAttribute("lang", form2.dataset.goodLang)
         );
         helpAud = 1;
       }
+      else if (helpAud === 1) {
+        lyricsDiv.classList.remove("hidden");
+        helpAud = 2;
+      }
+    }
+
+
+    // help só troca o lang das tags <p> e marca helpAud=1
+    function setButtonDowntime(button, seconds) {
+      button.disabled = true;
+      let remaining = seconds;
+      const originalText = button.textContent;
+      button.textContent = `Aguarde ${remaining}s`;
+      const interval = setInterval(() => {
+        remaining--;
+        button.textContent = `Aguarde ${remaining}s`;
+        if (remaining <= 0) {
+          clearInterval(interval);
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      }, 1000);
+    }
+
+    helpBtn2.addEventListener("click", () => {
+      updateLang();
+      setButtonDowntime(helpBtn2, 40);
     });
 
     // função checar
-    function check(form, input, resultSpan) {
+    function check(form, input, resultSpan, index) {
       const val = input.value.trim().toLowerCase();
       resultSpan.classList.remove("correct", "incorrect");
-      if (!val) { resultSpan.textContent = ""; return false; }
+      if (!val) {
+        resultSpan.textContent = "";
+        input.disabled = false;
+        return false;
+      }
+
       const ok = val === form.dataset.answer.toString().toLowerCase();
       resultSpan.textContent = ok ? "Correto" : "Incorreto";
       resultSpan.classList.add(ok ? "correct" : "incorrect");
+      input.disabled = ok;
+
+      // Se correto e index === 0, chama updateImg() enquanto helpImg < 3
+      if (ok && index === 0) {
+        while (helpImg < 2) { // helpImg vai de 0 a 2, updateImg usa helpImg+1
+          helpImg++;
+          updateImg();
+        }
+      }
+      if (ok && index === 1) {
+        while (helpAud < 2) { // helpImg vai de 0 a 2, updateImg usa helpImg+1
+          helpAud++;
+          updateLang();
+        }
+      }
       return ok;
     }
 
     nextBtn = document.getElementById("next-btn");
     // eventos checagem
-    [[form1, input1, res1], [form2, input2, res2]].forEach(([f, i, r]) => {
-      f.addEventListener("submit", e => {
+    [[form1, input1, res1, checkBtn1], [form2, input2, res2, checkBtn2]].forEach(([f, i, r, c], index) => {
+      c.addEventListener("click", (e) => {
         e.preventDefault();
-        check(f, i, r);
+        check(f, i, r, index);
         nextBtn.disabled = !(check(form1, input1, res1) && check(form2, input2, res2));
-      });
-      i.addEventListener("input", () => {
-        check(f, i, r);
-        nextBtn.disabled = !(check(form1, input1, res1) && check(form2, input2, res2));
-      });
+      })
     });
 
     updateImg();

@@ -2,19 +2,20 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-16">
-    <link rel="stylesheet" href="/src/css/style-pagina-3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/css/style-pagina-3.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css">
     <title>Página 3</title>
 </head>
 
+
 <body>
-    <!-- Este elemento está obsoleto e pode causar problemas em um verificador. É intencional. Websites antigos usavam isso. -->
     <marquee scrollamount="20">Bem-vindo ao terceiro nível do jogo!!</marquee>
+    <!-- Este elemento está obsoleto e pode causar problemas em um verificador. É intencional. Websites antigos usavam isso. -->
     <header>
         <div id="banner-border">
             <div id="banner-container" class="snaking-border">
-                <h1 id="banner-text">Bem-vindo à Página 3</h1>
+                <p id="banner-text">Bem-vindo à Página 3</p>
                 <img class="banner-gif" id="banner-gif-left" src="/resources/img/pagina-3/assets/computer.gif"
                     alt="GIF Esquerdo">
                 <img class="banner-gif" id="banner-gif-right" src="/resources/img/pagina-3/assets/globe2.gif"
@@ -29,18 +30,18 @@
                 <li class="sidebar-item" id="sidebar-default-page" data-target="default-page">
                     <i class="material-icons">home</i>
                     <span class="sidebar-text">Página Inicial</span>
-                <li class="sidebar-item" id="sidebar-puzzle-select" data-target="puzzle-select">
+                    <!-- <li class="sidebar-item" id="sidebar-puzzle-select" data-target="puzzle-select">
                     <i class="material-icons">select_all</i>
                     <span class="sidebar-text">Seletor de Enigma</span>
-                </li>
+                </li> -->
                 <li class="sidebar-item" id="sidebar-puzzle-form" data-target="puzzle-form">
                     <i class="material-icons">edit</i>
                     <span class="sidebar-text">Enigma de Formulário</span>
                 </li>
-                <li class="sidebar-item" id="sidebar-puzzle-clicking" data-target="puzzle-clicking">
+                <!-- <li class="sidebar-item" id="sidebar-puzzle-clicking" data-target="puzzle-clicking">
                     <i class="material-icons">image</i>
                     <span class="sidebar-text">Enigma de Clique</span>
-                </li>
+                </li> -->
                 <li class="sidebar-item" id="sidebar-puzzle-typing" data-target="puzzle-typing">
                     <i class="material-icons">keyboard</i>
                     <span class="sidebar-text">Enigma de Digitação</span>
@@ -49,7 +50,7 @@
         </nav>
         <div class="main-content puzzle-content">
             <section class="puzzle-page active" id="default-page">
-                <h2>Essa página está ruim, não está?</h2>
+                <p>Essa página está ruim, não está?</p>
                 <p>Elementos essenciais de um website moderno estão faltando ou estão errados aqui. Você consegue
                     adivinhar o quê?</p>
                 <!-- <p>Nota: esta lista deve estar oculta a princípio.</p> -->
@@ -66,7 +67,7 @@
             <section class="puzzle-page" id="puzzle-select">
                 <p>Esta página diz qual dos puzzles o usuário precisa resolver para passar a fase</p>
             </section>
-            <section class="puzzle-page" id="puzzle-form">
+            <section class="puzzle-page" id="puzzle-form-section">
                 <p>Formulário com funcionalidade ruim</p>
                 <ul id="puzzle-form-tip" class="hidden">
                     <li>Labels com posições ambíguas</li>
@@ -75,12 +76,14 @@
                     <li>Todos são inputs de texto, mesmo quando o mais adequado seria outro (data, dropdown...)</li>
                     <li>Auto foco no campo que não devia</li>
                     <li>Falta placeholder ou outras indicações para o formato de data</li>
+                    <li>PS.: A caixa de texto do Nome Real está ocultada.</li>
+
                 </ul>
-                <h2>Quem é esta pessoa?</h2>
+                <p>Quem é esta pessoa?</p>
                 <img src="" alt="" id="puzzle-form-img" style="width: 250px;">
                 <form id="puzzle-form">
-                    <label for="decoy" class="puzzle-form-label decoy">Nome Real</label>
                     <input type="text" id="decoy" class="puzzle-form-input decoy" name="decoy">
+                    <label for="decoy" class="puzzle-form-label decoy">Nome Real</label>
 
                     <input type="text" id="name" class="puzzle-form-input" name="name" required>
                     <label for="name" class="puzzle-form-label req">Nome Artístico</label>
@@ -94,16 +97,19 @@
                     <input type="text" id="date" class="puzzle-form-input" name="date" required>
                     <label for="date" class="puzzle-form-label req">Data de Nascimento</label>
                     <span class="result"></span>
-                    <button type="submit" class="puzzle-form-button" id="puzzle-form-button">Enviar</button>
+                    <div class="row">
+                        <button type="submit" class="puzzle-form-button" id="puzzle-form-button"
+                            onclick="event.preventDefault();">Enviar</button>
+                        <button type="button" class="help-btn" id="help-btn-form">Quero ajuda</button>
+                    </div>
                 </form>
             </section>
             <section class="puzzle-page" id="puzzle-images">
-                <!-- <p>Grid de imagens e um prompt dizendo quais devem ser clicadas.</p>
-                <ul>
+                <ul id="puzzle-images-tip" class="hidden">
                     <li>Falta indicação de qual imagem já foi clicada</li>
                     <li>Falta de feedback visual ao clicar</li>
                     <li>Imagens próximas demais</li>
-                </ul> -->
+                </ul>
             </section>
             <section class="puzzle-page" id="puzzle-typing">
                 <p>Pergunta vaga sobre a imagem</p>
@@ -112,12 +118,16 @@
                     <li>Falta de feedback visual ao digitar</li>
                     <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e
                         acentuação exatamente iguais à do gabarito)</li>
-                    <p>O que é isso?</p>
                 </ul>
+                <p>O que é isso?</p>
+
                 <img src="" alt="" id="puzzle-typing-img" style="width: 350px">
                 <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
                 <span class="result"></span>
-                <button id="puzzle-submit">Verificar</button>
+                <div class="row">
+                    <button id="puzzle-submit">Verificar</button>
+                    <button type="button" class="help-btn" id="help-btn-typing">Quero ajuda</button>
+                </div>
             </section>
             <form>
                 <button id="next-btn" type="button" class="next-btn">Avançar</button>
@@ -125,7 +135,7 @@
         </div>
     </main>
     <script src="/src/js/load-puzzles.js" defer></script>
-    <script src="/src/js/puzzles_3.js" defer></script>
+    <script src="/src/js/script-pagina-3.js" defer></script>
 </body>
 
 </html>

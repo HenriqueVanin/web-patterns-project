@@ -198,3 +198,22 @@ label.decoy::after {
 .result.incorrect {
     color: #c0392b;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-btn {
+    background-color: #eeeeee;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.help-btn:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
