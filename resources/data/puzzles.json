@@ -1,266 +1,266 @@
 {
-    "level-1": {
-        "category-1": [
-            {
-                "question": "Quantos idiomas oficials a Bolívia possui de acordo com sua constituição?",
-                "answer": 37
-            },
-            {
-                "question": "Quantos países do espaço Schengen não são membros da União Europeia?",
-                "answer": 4
-            },
-            {
-                "question": "Quantas juristições autônomas compõe o Reino da Nova Zelândia?",
-                "answer": 3
-            },
-            {
-                "question": "Quantos países no mundo não possuem nenhuma capital oficial?",
-                "answer": 2
-            },
-            {
-                "question": "Quantas divisões federais da Rússia não são internacionalmente reconhecidas como território russo?",
-                "answer": 6
-            }
+  "level-1": {
+    "category-1": [
+      {
+        "question": "Quantos idiomas oficials a Bolívia possui de acordo com sua constituição?",
+        "answer": 37
+      },
+      {
+        "question": "Quantos países do espaço Schengen não são membros da União Europeia?",
+        "answer": 4
+      },
+      {
+        "question": "Quantas juristições autônomas compõe o Reino da Nova Zelândia?",
+        "answer": 3
+      },
+      {
+        "question": "Quantos países no mundo não possuem nenhuma capital oficial?",
+        "answer": 2
+      },
+      {
+        "question": "Quantas divisões federais da Rússia não são internacionalmente reconhecidas como território russo?",
+        "answer": 6
+      }
+    ],
+    "category-2": [
+      {
+        "question": "Em qual ano foi concebida a bandeira nacional que está em uso por mais tempo atualmente?",
+        "answer": 1219
+      },
+      {
+        "question": "Em qual ano o inglês se tornou o idioma oficial dos Estados Unidos?",
+        "answer": 2025
+      },
+      {
+        "question": "Quantos reinos existiam na China antes da unificação do império?",
+        "answer": 7
+      },
+      {
+        "question": "Em que ano Abd al-Rahman al-Ghafiqi travou sua última batalha contra os Francos pelo Califado Omíada?",
+        "answer": 732
+      },
+      {
+        "question": "Quantas dinastias governaram o Egito Antigo antes da conquista pelo Império Romano?",
+        "answer": 33
+      }
+    ],
+    "category-3": [
+      {
+        "question": "Quantos membros nomeados da família Dessendre existem no jogo Clair Obscure: Expedition 33?",
+        "answer": 5
+      },
+      {
+        "question": "Quantas cidades diferentes os personagens de The Last of Us Part II visitam durante o jogo?",
+        "answer": 4
+      },
+      {
+        "question": "Em que ano se inicia a história do jogo Red Dead Redemption 2?",
+        "answer": 1899
+      },
+      {
+        "question": "Em qual camada V1 encontra o Anjo Gabriel pela primeira vez no jogo Ultrakill?",
+        "answer": 3
+      },
+      {
+        "question": "Em qual câmara o Companion Cube é dado para Chell no jogo Portal?",
+        "answer": 17
+      }
+    ]
+  },
+  "level-2": {
+    "movie-stills": [
+      {
+        "img-path": "movie1.png",
+        "bad-alt": "Cena do filme Barbie em que eles são presos.",
+        "good-alt": "Cena do filme Barbie onde Ken é preso, segurando uma placa escrito 'LAPD, AND KEN, 919-17, VENICE'.",
+        "answer": 902
+      },
+      {
+        "img-path": "movie2.png",
+        "bad-alt": "Cena da série Chernobyl na hora da explosão.",
+        "good-alt": "Cena da série Chernobyl mostrando a leitura de energia antes da explosão, que é 24720 mega Watts.",
+        "answer": 24720
+      },
+      {
+        "img-path": "movie3.png",
+        "bad-alt": "Cena do filme Cure com a médica.",
+        "good-alt": "Cena do filme Cure onde a médica encontra um X escrito na parede.",
+        "answer": 10
+      },
+      {
+        "img-path": "movie4.png",
+        "bad-alt": "Cena do filme Bastardos Inglórios com os alemães.",
+        "good-alt": "Cena do filme Bastardos Inglórios onde Tenente Hicox levanta três dedos da maneira britânica ao invés de alemã.",
+        "answer": 3
+      },
+      {
+        "img-path": "movie5.png",
+        "bad-alt": "Cena do filme V de Vingança sobre a arma biológica de St. Mary's.",
+        "good-alt": "Cena do filme V de Vingança mostrando uma notícia dizendo que 178 pessoas morreram com o vírus de St. Mary's.",
+        "answer": 178
+      }
+    ],
+    "song-lyrics": [
+      {
+        "song-name": "22",
+        "artist": "Taylor Swift",
+        "lyrics": [
+          "It seems like one of those nights",
+          "This place is too crowded",
+          "Too many cool kids"
         ],
-        "category-2": [
-            {
-                "question": "Em qual ano foi concebida a bandeira nacional que está em uso por mais tempo atualmente?",
-                "answer": 1219
-            },
-            {
-                "question": "Em qual ano o inglês se tornou o idioma oficial dos Estados Unidos?",
-                "answer": 2025
-            },
-            {
-                "question": "Quantos reinos existiam na China antes da unificação do império?",
-                "answer": 7
-            },
-            {
-                "question": "Em que ano Abd al-Rahman al-Ghafiqi travou sua última batalha contra os Francos pelo Califado Omíada?",
-                "answer": 732
-            },
-            {
-                "question": "Quantas dinastias governaram o Egito Antigo antes da conquista pelo Império Romano?",
-                "answer": 33
-            }
+        "bad-lang": "pt",
+        "good-lang": "en",
+        "answer": 22
+      },
+      {
+        "song-name": "505",
+        "artist": "Arctic Monkeys",
+        "lyrics": [
+          "Not shy of a spark",
+          "The knife twists at the thought that I should fall short of the mark"
         ],
-        "category-3": [
-            {
-                "question": "Quantos membros nomeados da família Dessendre existem no jogo Clair Obscure: Expedition 33?",
-                "answer": 5
-            },
-            {
-                "question": "Quantas cidades diferentes os personagens de The Last of Us Part II visitam durante o jogo?",
-                "answer": 4
-            },
-            {
-                "question": "Em que ano se inicia a história do jogo Red Dead Redemption 2?",
-                "answer": 1899
-            },
-            {
-                "question": "Em qual camada V1 encontra o Anjo Gabriel pela primeira vez no jogo Ultrakill?",
-                "answer": 3
-            },
-            {
-                "question": "Em qual câmara o Companion Cube é dado para Chell no jogo Portal?",
-                "answer": 17
-            }
-        ]
+        "bad-lang": "pt",
+        "good-lang": "en",
+        "answer": 505
+      },
+      {
+        "song-name": "One",
+        "artist": "Metallica",
+        "lyrics": [
+          "Darkness",
+          "Imprisoning me",
+          "All that I see",
+          "Absolute horror",
+          "I cannot live",
+          "I cannot die",
+          "Trapped in myself",
+          "Body, my holding cell"
+        ],
+        "bad-lang": "pt",
+        "good-lang": "en",
+        "answer": 1
+      },
+      {
+        "song-name": "Mambo No. 5",
+        "artist": "Lou Bega",
+        "lyrics": [
+          "Clap your hands once",
+          "And clap your hands twice",
+          "And if it looks like this",
+          "Then you're doing it right"
+        ],
+        "bad-lang": "pt",
+        "good-lang": "en",
+        "answer": 5
+      },
+      {
+        "song-name": "A Thousand Miles",
+        "artist": "Vanessa Carlton",
+        "lyrics": [
+          "If I could fall",
+          "Into the sky",
+          "Do you think time",
+          "Would pass me by?"
+        ],
+        "bad-lang": "pt",
+        "good-lang": "en",
+        "answer": 1000
+      }
+    ]
+  },
+  "level-3": {
+    "puzzle-typing": [
+      {
+        "path": "/resources/img/pagina-3/puzzle-typing/cachorro.jpg",
+        "answer": "Cachorro"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-typing/gato.jpg",
+        "answer": "Gato"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-typing/leão.jpg",
+        "answer": "Leão"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-typing/tubarao.jpg",
+        "answer": "Tubarão"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-typing/capivara.jpg",
+        "answer": "Capivara"
+      }
+    ],
+    "puzzle-clicking": {
+      "flores": [
+        "/resources/img/pagina-3/puzzle-clicking/flor-1.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/flor-2.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/flor-3.jpg"
+      ],
+      "frutas": [
+        "/resources/img/pagina-3/puzzle-clicking/fruta-1.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/fruta-2.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/fruta-3.jpg"
+      ],
+      "lápis": [
+        "/resources/img/pagina-3/puzzle-clicking/lapis-1.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/lapis-2.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/lapis-3.jpg"
+      ],
+      "livros": [
+        "/resources/img/pagina-3/puzzle-clicking/livro-1.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/livro-2.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/livro-3.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/livro-4.jpg"
+      ],
+      "montanhas": [
+        "/resources/img/pagina-3/puzzle-clicking/montanha-1.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/montanha-2.jpg",
+        "/resources/img/pagina-3/puzzle-clicking/montanha-3.jpg"
+      ]
     },
-    "level-2": {
-        "movie-stills": [
-            {
-                "img-path": "movie1.png",
-                "bad-alt": "Cena do filme Barbie em que eles são presos.",
-                "good-alt": "Cena do filme Barbie onde Ken é preso, segurando uma placa escrito 'LAPD, AND KEN, 919-17, VENICE'.",
-                "answer": 902
-            },
-            {
-                "img-path": "movie2.png",
-                "bad-alt": "Cena da série Chernobyl na hora da explosão.",
-                "good-alt": "Cena da série Chernobyl mostrando a leitura de energia antes da explosão, que é 24720 mega Watts.",
-                "answer": 24720
-            },
-            {
-                "img-path": "movie3.png",
-                "bad-alt": "Cena do filme Cure com a médica.",
-                "good-alt": "Cena do filme Cure onde a médica encontra um X escrito na parede.",
-                "answer": 10
-            },
-            {
-                "img-path": "movie4.png",
-                "bad-alt": "Cena do filme Bastardos Inglórios com os alemães.",
-                "good-alt": "Cena do filme Bastardos Inglórios onde Tenente Hicox levanta três dedos da maneira britânica ao invés de alemã.",
-                "answer": 3
-            },
-            {
-                "img-path": "movie5.png",
-                "bad-alt": "Cena do filme V de Vingança sobre a arma biológica de St. Mary's.",
-                "good-alt": "Cena do filme V de Vingança mostrando uma notícia dizendo que 178 pessoas morreram com o vírus de St. Mary's.",
-                "answer": 178
-            }
-        ],
-        "song-lyrics": [
-            {
-                "song-name": "22",
-                "artist": "Taylor Swift",
-                "lyrics": [
-                    "It seems like one of those nights",
-                    "This place is too crowded",
-                    "Too many cool kids"
-                ],
-                "bad-lang": "pt",
-                "good-lang": "en",
-                "answer": 22
-            },
-            {
-                "song-name": "505",
-                "artist": "Arctic Monkeys",
-                "lyrics": [
-                    "Not shy of a spark",
-                    "The knife twists at the thought that I should fall short of the mark"
-                ],
-                "bad-lang": "pt",
-                "good-lang": "en",
-                "answer": 505
-            },
-            {
-                "song-name": "One",
-                "artist": "Metallica",
-                "lyrics": [
-                    "Darkness",
-                    "Imprisoning me",
-                    "All that I see",
-                    "Absolute horror",
-                    "I cannot live",
-                    "I cannot die",
-                    "Trapped in myself",
-                    "Body, my holding cell"
-                ],
-                "bad-lang": "pt",
-                "good-lang": "en",
-                "answer": 1
-            },
-            {
-                "song-name": "Mambo No. 5",
-                "artist": "Lou Bega",
-                "lyrics": [
-                    "Clap your hands once",
-                    "And clap your hands twice",
-                    "And if it looks like this",
-                    "Then you're doing it right"
-                ],
-                "bad-lang": "pt",
-                "good-lang": "en",
-                "answer": 5
-            },
-            {
-                "song-name": "A Thousand Miles",
-                "artist": "Vanessa Carlton",
-                "lyrics": [
-                    "If I could fall",
-                    "Into the sky",
-                    "Do you think time",
-                    "Would pass me by?"
-                ],
-                "bad-lang": "pt",
-                "good-lang": "en",
-                "answer": 1000
-            }
-        ]
-    },
-    "level-3": {
-        "puzzle-typing": [
-            {
-                "path": "/resources/img/pagina-3/puzzle-typing/cachorro.jpg",
-                "answer": "Cachorro"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-typing/img/gato.jpg",
-                "answer": "Gato"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-typing/img/leão.jpg",
-                "answer": "Leão"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-typing/img/tubarao.jpg",
-                "answer": "Tubarão"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-typing/img/capivara.jpg",
-                "answer": "Capivara"
-            }
-        ],
-        "puzzle-clicking": {
-            "flores": [
-                "/resources/img/pagina-3/puzzle-clicking/flor-1.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/flor-2.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/flor-3.jpg"
-            ],
-            "frutas": [
-                "/resources/img/pagina-3/puzzle-clicking/fruta-1.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/fruta-2.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/fruta-3.jpg"
-            ],
-            "lápis": [
-                "/resources/img/pagina-3/puzzle-clicking/lapis-1.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/lapis-2.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/lapis-3.jpg"
-            ],
-            "livros": [
-                "/resources/img/pagina-3/puzzle-clicking/livro-1.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/livro-2.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/livro-3.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/livro-4.jpg"
-            ],
-            "montanhas": [
-                "/resources/img/pagina-3/puzzle-clicking/montanha-1.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/montanha-2.jpg",
-                "/resources/img/pagina-3/puzzle-clicking/montanha-3.jpg"
-            ]
-        },
-        "puzzle-form": [
-            {
-                "path": "/resources/img/pagina-3/puzzle-form/anitta.jpg",
-                "nome-real": "Larissa de Macedo Machado",
-                "nome-artistico": "Anitta",
-                "pais-de-nascimento": "Brasil",
-                "cidade-de-nascimento": "Rio de Janeiro",
-                "data-de-nascimento": "30/03/1993"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-form/bowie.jpg",
-                "nome-real": "David Robert Jones",
-                "nome-artistico": "David Bowie",
-                "pais-de-nascimento": "Reino Unido",
-                "cidade-de-nascimento": "Londres",
-                "data-de-nascimento": "08/01/1947"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-form/dogg.jpg",
-                "nome-real": "Calvin Cordozar Broadus Jr.",
-                "nome-artistico": "Snoop Dogg",
-                "pais-de-nascimento": "Estados Unidos",
-                "cidade-de-nascimento": "Long Beach",
-                "data-de-nascimento": "20/10/1971"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-form/eminem.jpg",
-                "nome-real": "Marshall Bruce Mathers III",
-                "nome-artistico": "Eminem",
-                "pais-de-nascimento": "Estados Unidos",
-                "cidade-de-nascimento": "Saint Joseph",
-                "data-de-nascimento": "17/10/1972"
-            },
-            {
-                "path": "/resources/img/pagina-3/puzzle-form/mercury.jpg",
-                "nome-real": "Farrokh Bulsara",
-                "nome-artistico": "Freddie Mercury",
-                "pais-de-nascimento": "Zanzibar",
-                "cidade-de-nascimento": "Stone Town",
-                "data-de-nascimento": "05/09/1946"
-            }
-        ]
-    }
+    "puzzle-form": [
+      {
+        "path": "/resources/img/pagina-3/puzzle-form/anitta.jpg",
+        "nome-real": "Larissa de Macedo Machado",
+        "nome-artistico": "Anitta",
+        "pais-de-nascimento": "Brasil",
+        "cidade-de-nascimento": "Rio de Janeiro",
+        "data-de-nascimento": "30/03/1993"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-form/bowie.jpg",
+        "nome-real": "David Robert Jones",
+        "nome-artistico": "David Bowie",
+        "pais-de-nascimento": "Reino Unido",
+        "cidade-de-nascimento": "Londres",
+        "data-de-nascimento": "08/01/1947"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-form/dogg.jpg",
+        "nome-real": "Calvin Cordozar Broadus Jr.",
+        "nome-artistico": "Snoop Dogg",
+        "pais-de-nascimento": "Estados Unidos",
+        "cidade-de-nascimento": "Long Beach",
+        "data-de-nascimento": "20/10/1971"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-form/eminem.jpg",
+        "nome-real": "Marshall Bruce Mathers III",
+        "nome-artistico": "Eminem",
+        "pais-de-nascimento": "Estados Unidos",
+        "cidade-de-nascimento": "Saint Joseph",
+        "data-de-nascimento": "17/10/1972"
+      },
+      {
+        "path": "/resources/img/pagina-3/puzzle-form/mercury.jpg",
+        "nome-real": "Farrokh Bulsara",
+        "nome-artistico": "Freddie Mercury",
+        "pais-de-nascimento": "Zanzibar",
+        "cidade-de-nascimento": "Stone Town",
+        "data-de-nascimento": "05/09/1946"
+      }
+    ]
+  }
 }

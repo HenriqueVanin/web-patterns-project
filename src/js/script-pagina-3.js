@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Seleciona puzzles aleatórios para cada seção
     selectedPuzzles = fetchRandomPuzzles(3);
-    
+
     // Carrega puzzles de typing
 
     // Carrega puzzles de clicking
