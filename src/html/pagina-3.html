@@ -15,8 +15,10 @@
         <div id="banner-border">
             <div id="banner-container" class="snaking-border">
                 <h1 id="banner-text">Bem-vindo à Página 3</h1>
-                <img class="banner-gif" id="banner-gif-left" src="/resources/img/pagina-3/assets/computer.gif" alt="GIF Esquerdo">
-                <img class="banner-gif" id="banner-gif-right" src="/resources/img/pagina-3/assets/globe2.gif" alt="GIF Direito">
+                <img class="banner-gif" id="banner-gif-left" src="/resources/img/pagina-3/assets/computer.gif"
+                    alt="GIF Esquerdo">
+                <img class="banner-gif" id="banner-gif-right" src="/resources/img/pagina-3/assets/globe2.gif"
+                    alt="GIF Direito">
             </div>
         </div>
     </header>
@@ -26,22 +28,22 @@
                 <!-- Conteúdo temporário, será trocado para ícones menos intuitivos e nomes menos descritivos -->
                 <li class="sidebar-item" id="sidebar-default-page" data-target="default-page">
                     <i class="material-icons">home</i>
-                    <span class="sidebar-text">Default Page</span>
+                    <span class="sidebar-text">Página Inicial</span>
                 <li class="sidebar-item" id="sidebar-puzzle-select" data-target="puzzle-select">
                     <i class="material-icons">select_all</i>
-                    <span class="sidebar-text">Puzzle Select</span>
+                    <span class="sidebar-text">Seletor de Enigma</span>
                 </li>
                 <li class="sidebar-item" id="sidebar-puzzle-form" data-target="puzzle-form">
                     <i class="material-icons">edit</i>
-                    <span class="sidebar-text">Puzzle Form</span>
+                    <span class="sidebar-text">Enigma de Formulário</span>
                 </li>
                 <li class="sidebar-item" id="sidebar-puzzle-clicking" data-target="puzzle-clicking">
                     <i class="material-icons">image</i>
-                    <span class="sidebar-text">Puzzle Clicking</span>
+                    <span class="sidebar-text">Enigma de Clique</span>
                 </li>
                 <li class="sidebar-item" id="sidebar-puzzle-typing" data-target="puzzle-typing">
                     <i class="material-icons">keyboard</i>
-                    <span class="sidebar-text">Puzzle Typing</span>
+                    <span class="sidebar-text">Enigma de Digitação</span>
                 </li>
             </ul>
         </nav>
@@ -57,7 +59,8 @@
                     <li>Comic Sans...</li>
                     <li>Falta de responsividade</li>
                     <li>Quebrou o padrão de puzzles que o próprio site estabeleceu nas páginas anteriores</li>
-                    <li>Menu sem consistência de ordem e com iconografia/nomes não convencionais, simulando um site que não segue convenções</li>
+                    <li>Menu sem consistência de ordem e com iconografia/nomes não convencionais, simulando um site que
+                        não segue convenções</li>
                 </ul>
             </section>
             <section class="puzzle-page" id="puzzle-select">
@@ -74,7 +77,7 @@
                     <li>Falta placeholder ou outras indicações para o formato de data</li>
                 </ul>
                 <h2>Quem é esta pessoa?</h2>
-                <img src="" alt="" id="puzzle-form-img" style="width: 100px;">
+                <img src="" alt="" id="puzzle-form-img" style="width: 250px;">
                 <form id="puzzle-form">
                     <label for="decoy" class="puzzle-form-label decoy">Nome Real</label>
                     <input type="text" id="decoy" class="puzzle-form-input decoy" name="decoy">
@@ -91,27 +94,28 @@
                     <input type="text" id="date" class="puzzle-form-input" name="date" required>
                     <label for="date" class="puzzle-form-label req">Data de Nascimento</label>
 
-                    <button type="submit" class="puzzle-form-button">Enviar</button>
+                    <button type="submit" class="puzzle-form-button" id="puzzle-form-button">Enviar</button>
                 </form>
             </section>
             <section class="puzzle-page" id="puzzle-images">
-                <p>Grid de imagens e um prompt dizendo quais devem ser clicadas.</p>
+                <!-- <p>Grid de imagens e um prompt dizendo quais devem ser clicadas.</p>
                 <ul>
                     <li>Falta indicação de qual imagem já foi clicada</li>
                     <li>Falta de feedback visual ao clicar</li>
                     <li>Imagens próximas demais</li>
-                </ul>
+                </ul> -->
             </section>
             <section class="puzzle-page" id="puzzle-typing">
                 <p>Pergunta vaga sobre a imagem</p>
                 <ul>
-                    <li>A pergunta não é explícita o suficiente para saber o que responder</li>
+                    <!-- <li>A pergunta não é explícita o suficiente para saber o que responder</li>
                     <li>Falta de feedback visual ao digitar</li>
-                    <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e acentuação exatamente iguais à do gabarito)</li>
-                <h2>O que é isso?</h2>
-                <img src="" alt="" id="puzzle-typing-img">
-                <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
-                <button id="puzzle-submit">Verificar</button>
+                    <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e
+                        acentuação exatamente iguais à do gabarito)</li> -->
+                    <h2>O que é isso?</h2>
+                    <img src="" alt="" id="puzzle-typing-img" style="width: 350px">
+                    <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
+                    <button id="puzzle-submit">Verificar</button>
             </section>
             <form>
                 <button id="next-btn" type="button" class="next-btn">Avançar</button>

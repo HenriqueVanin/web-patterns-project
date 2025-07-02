@@ -190,8 +190,10 @@ input[type="text"] {
     box-sizing: border-box;
     min-height: 0;
     padding-left: 3rem;
+    text-align: left;
     padding-right: 3rem;
 }
+
 
 .title {
     grid-area: title;
@@ -220,6 +222,14 @@ input[type="text"] {
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, color 0.2s, opacity 0.3s;
     max-width: 320px;
+}
+
+.next-btn:disabled,
+.next-btn[disabled] {
+    background-color: #6c757d;
+    color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 .puzzle-form {
@@ -372,13 +382,15 @@ input[type="text"] {
 .play-btn {
     padding: 0.7rem;
     border: none;
-    border-radius: 4px;
-    background: #129e7b;
+    border-radius: 24px;
+    background: transparent;
     color: #fff;
+    font-size: 18px;
+    border: #0f8a64 2px solid;
     cursor: pointer;
     margin-bottom: 1rem;
     transition: background 0.2s;
-    max-width: 320px;
+    max-width: 290px;
 }
 
 .play-btn:hover {

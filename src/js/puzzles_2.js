@@ -18,7 +18,7 @@ fetch("/resources/data/puzzles.json")
 
     // init imagem
     document.getElementById("col-title-1").textContent = "Enigma 1";
-    imgEl.src = `data/img/${m["img-path"]}`;
+    imgEl.src = `/resources/img/pagina-2/${m["img-path"]}`;
     form1.dataset.badAlt = m["bad-alt"];
     form1.dataset.goodAlt = m["good-alt"];
     form1.dataset.answer = m.answer;
