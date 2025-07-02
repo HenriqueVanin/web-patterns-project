@@ -260,11 +260,13 @@ input[type="text"]:disabled {
     color: #fff;
     background-color: #129e7b;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: large;
     cursor: pointer;
+    height: 50px;
     transition: background-color 0.1s ease-in-out, color 0.2s, opacity 0.3s;
     max-width: 320px;
+
 }
 
 .next-btn:disabled,
