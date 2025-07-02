@@ -16,7 +16,7 @@ fetch("/resources/data/puzzles.json")
 
     // init imagem
     document.getElementById("col-title-1").textContent = "Enigma 1";
-    imgEl.src = `data/img/${m["img-path"]}`;
+    imgEl.src = `/resources/img/pagina-2/${m["img-path"]}`;
     form1.dataset.badAlt = m["bad-alt"];
     form1.dataset.goodAlt = m["good-alt"];
     form1.dataset.answer = m.answer;
@@ -50,8 +50,8 @@ fetch("/resources/data/puzzles.json")
     const helpBtn2 = document.getElementById("help-puzzle-2");
 
     // preenche título e dados
-    const songName = s["song-name"];
-    document.getElementById("col-title-2").textContent = `Enigma 2: "${songName}"`;
+    // const songName = s["song-name"];
+    document.getElementById("col-title-2").textContent = `Enigma 2`;
     lyricsDiv.innerHTML = s.lyrics
       .map(line => `<p lang="${s["bad-lang"]}">${line}</p>`)
       .join("");
