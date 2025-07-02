@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
     max-width: 100%;
     flex-shrink: 0;
     color: #d6d6d6;
-    background-color: rgba(44, 44, 44, 0.4);
+    background-color: #1a1a1a;
     font-size: 1rem;
     display: flex;
     gap: 20px;
@@ -220,7 +220,7 @@ input[type="text"]:disabled {
     background: linear-gradient(0deg, rgba(24, 24, 24, 0.85) 0%, rgba(29, 29, 29, 0.7) 100%);
     padding: 15px;
     color: #ffffff;
-    border: 1px solid #808080;
+    border: 1px solid #14ad87;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -233,6 +233,7 @@ input[type="text"]:disabled {
     padding-left: 3rem;
     text-align: left;
     padding-right: 3rem;
+    box-shadow: 0 4px 24px 0 rgba(20, 173, 135, 0.18);
 }
 
 
@@ -474,12 +475,15 @@ input[type="text"]:disabled {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+
+    color: #12cc91;
 }
 
 .page-title {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    color: #12cc91;
 }
 
 .hidden {
