@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             helpBtn.addEventListener("click", function () {
                 applyColumnStylePuzzle(idx);
                 helpBtn.disabled = true;
-                let remaining = 40;
+                let remaining = 10;
                 const originalText = helpBtn.textContent;
                 helpBtn.textContent = `Aguarde ${remaining}s`;
                 const interval = setInterval(() => {

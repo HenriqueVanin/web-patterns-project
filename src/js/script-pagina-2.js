@@ -35,7 +35,7 @@ fetch("/resources/data/puzzles.json")
     helpBtn1.addEventListener("click", () => {
       if (helpImg < 2) {
         helpImg++; updateImg();
-        setButtonDowntime(helpBtn1, 40);
+        setButtonDowntime(helpBtn1, 10);
       }
 
     });
