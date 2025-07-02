@@ -6,8 +6,7 @@ fetch("/resources/data/puzzles.json")
 
 // Carrega um grupo de puzzles aleatórios para um nível específico
 // O formato de retorno e a quantidade de puzzles dependem do nível
-function fetchRandomPuzzles(level)
-{
+function fetchRandomPuzzles(level) {
     const puzzles = JSON.parse(sessionStorage.getItem("puzzles"));
     const lvl = puzzles[`level-${level}`];
     let puzzlesData = null;
@@ -25,8 +24,7 @@ function fetchRandomPuzzles(level)
     return puzzlesData;
 }
 
-function fetchPuzzlesLvl1(data)
-{
+function fetchPuzzlesLvl1(data) {
     const categories = Object.values(data);
 
     const selected = categories.map((questions) => {
@@ -42,13 +40,11 @@ function fetchPuzzlesLvl1(data)
     return selected;
 }
 
-function fetchPuzzlesLvl2(data)
-{
+function fetchPuzzlesLvl2(data) {
 
 }
 
-function fetchPuzzlesLvl3(data)
-{
+function fetchPuzzlesLvl3(data) {
     const sections = Object.keys(data);
 
     // Seleciona uma imagem aleatória para puzzle-typing

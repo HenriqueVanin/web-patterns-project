@@ -48,11 +48,11 @@
             </ul>
         </nav>
         <div class="main-content puzzle-content">
-            <section class="puzzle-page" id="default-page">
+            <section class="puzzle-page active" id="default-page">
                 <h2>Essa página está ruim, não está?</h2>
                 <p>Elementos essenciais de um website moderno estão faltando ou estão errados aqui. Você consegue
                     adivinhar o quê?</p>
-                <p>Nota: esta lista deve estar oculta a princípio.</p>
+                <!-- <p>Nota: esta lista deve estar oculta a princípio.</p> -->
                 <ul>
                     <li>Layout tão datado que tem idade para dirigir</li>
                     <li>GIFs e animações exageradas, inclindo aquela faixa lá em cima.</li>
@@ -66,9 +66,9 @@
             <section class="puzzle-page" id="puzzle-select">
                 <p>Esta página diz qual dos puzzles o usuário precisa resolver para passar a fase</p>
             </section>
-            <section class="puzzle-page active" id="puzzle-form">
+            <section class="puzzle-page" id="puzzle-form">
                 <p>Formulário com funcionalidade ruim</p>
-                <ul>
+                <ul id="puzzle-form-tip" class="hidden">
                     <li>Labels com posições ambíguas</li>
                     <li>Campos obrigatórios mal indicados e sem explicação, sem seguir convenções</li>
                     <li>Falta de validação/regex nos campos de texto</li>
@@ -93,7 +93,7 @@
 
                     <input type="text" id="date" class="puzzle-form-input" name="date" required>
                     <label for="date" class="puzzle-form-label req">Data de Nascimento</label>
-
+                    <span class="result"></span>
                     <button type="submit" class="puzzle-form-button" id="puzzle-form-button">Enviar</button>
                 </form>
             </section>
@@ -107,15 +107,17 @@
             </section>
             <section class="puzzle-page" id="puzzle-typing">
                 <p>Pergunta vaga sobre a imagem</p>
-                <ul>
-                    <!-- <li>A pergunta não é explícita o suficiente para saber o que responder</li>
+                <ul id="puzzle-typing-tip" class="hidden">
+                    <li>A pergunta não é explícita o suficiente para saber o que responder</li>
                     <li>Falta de feedback visual ao digitar</li>
                     <li>Validação imprópria do input, feita com um match de string simples (forçando capitalização e
-                        acentuação exatamente iguais à do gabarito)</li> -->
-                    <h2>O que é isso?</h2>
-                    <img src="" alt="" id="puzzle-typing-img" style="width: 350px">
-                    <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
-                    <button id="puzzle-submit">Verificar</button>
+                        acentuação exatamente iguais à do gabarito)</li>
+                    <p>O que é isso?</p>
+                </ul>
+                <img src="" alt="" id="puzzle-typing-img" style="width: 350px">
+                <input type="text" id="puzzle-input" placeholder="Digite a resposta aqui...">
+                <span class="result"></span>
+                <button id="puzzle-submit">Verificar</button>
             </section>
             <form>
                 <button id="next-btn" type="button" class="next-btn">Avançar</button>

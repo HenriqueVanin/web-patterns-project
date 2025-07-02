@@ -74,7 +74,7 @@ fetch("/resources/data/puzzles.json")
             const img = document.createElement('img');
             img.src = imgSrc;
             img.alt = '';
-            img.style.width = '100%'; // Ajusta a largura da imagem
+            img.style.width = '100%';
             puzzleImagesSection.appendChild(img);
         });
 

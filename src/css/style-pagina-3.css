@@ -186,3 +186,15 @@ label.decoy::after {
     content: " *";
     color: black;
 }
+
+.hidden {
+    display: none;
+}
+
+.result.correct {
+    color: #158a5b;
+}
+
+.result.incorrect {
+    color: #c0392b;
+}
