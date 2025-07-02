@@ -1,3 +1,8 @@
+/* Alterei o grid-template-areas e grid-template-columns da main*/
+/* Alterei o grid-template-areas do @media (max-width: 1400px) {main*/
+/* De grid-area: col1 / col1 / col3 / col3; para grid-area: col1 / col1 / col2 / col2;*/
+/* Comentei o .column:nth-child(3)*/
+
 html,
 body {
     height: 100%;
